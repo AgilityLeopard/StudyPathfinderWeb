@@ -55,7 +55,8 @@ rogueButton.addEventListener('click', () => {
     wizardButton.classList.add('hoverEffect');
     wizardButton.classList.add('characterChoices');
     wizardButton.classList.remove('characterSelected');
-    dexValue++;
+    dexValue == 12;
+    document.getElementById("dexResult").innerHTML = dexValue;
 })
 
 fighterButton.addEventListener('click', () => {
@@ -72,7 +73,8 @@ fighterButton.addEventListener('click', () => {
     rogueButton.classList.add('hoverEffect');
     rogueButton.classList.add('characterChoices');
     rogueButton.classList.remove('characterSelected');
-    dexValue--;
+    dexValue == 10;
+    document.getElementById("dexResult").innerHTML = dexValue;
 })
 
 wizardButton.addEventListener('click', () => {
@@ -89,7 +91,8 @@ wizardButton.addEventListener('click', () => {
     fighterButton.classList.add('hoverEffect');
     fighterButton.classList.add('characterChoices');
     fighterButton.classList.remove('characterSelected');
-    dexValue--;
+    dexValue == 10;
+    document.getElementById("dexResult").innerHTML = dexValue;
 })
 
 // Race Selection Event Listeners
@@ -106,7 +109,8 @@ elfButton.addEventListener('click', () => {
     gnomeButton.classList.add('hoverEffect');
     gnomeButton.classList.add('characterChoices');
     gnomeButton.classList.remove('characterSelected');
-    dexValue++;
+    dexValue == 12;
+    document.getElementById("dexResult").innerHTML = dexValue;
 })
 
 dwarfButton.addEventListener('click', () => {
@@ -121,7 +125,8 @@ dwarfButton.addEventListener('click', () => {
     gnomeButton.classList.add('hoverEffect');
     gnomeButton.classList.add('characterChoices');
     gnomeButton.classList.remove('characterSelected');
-    dexValue--;
+    dexValue == 10;
+    document.getElementById("dexResult").innerHTML = dexValue;
 })
 
 gnomeButton.addEventListener('click', () => {
@@ -136,7 +141,8 @@ gnomeButton.addEventListener('click', () => {
     dwarfButton.classList.add('hoverEffect');
     dwarfButton.classList.add('characterChoices');
     dwarfButton.classList.remove('characterSelected');
-    dexValue--;
+    dexValue == 10;
+    document.getElementById("dexResult").innerHTML = dexValue;
 })
 
 
