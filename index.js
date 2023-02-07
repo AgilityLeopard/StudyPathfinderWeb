@@ -34,30 +34,88 @@ const gnomeButton = document.getElementById("gnomeButton");
 
 // Class Selection Consts for user selection
 
-const rogueButton = document.getElementById("rogueButton");
-const fighterButton = document.getElementById("fighterButton");
-const wizardButton = document.getElementById("wizardButton");
+const classButton = [];
+classButton[0] = document.getElementById("rogueButton");
+classButton[1] = document.getElementById("wizardButton");
+classButton[2] = document.getElementById("fighterButton");
+classButton[3] = document.getElementById("clericButton");
+
+//const rogueButton = document.getElementById("rogueButton");
+//const fighterButton = document.getElementById("fighterButton");
+//const wizardButton = document.getElementById("wizardButton");
 
 // Class Selection Event Listeners
 
 
-rogueButton.addEventListener('click', () => {
-    rogueButton.classList.remove('hoverEffect');
-    rogueButton.classList.remove('characterChoices');
-    rogueButton.classList.add('characterSelected');
+classButton[0].addEventListener('click', () => {
+    classButton[0].classList.remove('hoverEffect');
+    classButton[0].classList.remove('characterChoices');
+    classButton[0].classList.add('characterSelected');
+    for (let i = 0; i < 4; i++) {   
+            if( i != 0){
+                classButton[i].classList.add('hoverEffect');
+                classButton[i].classList.add('characterChoices');
+                classButton[i].classList.remove('characterSelected');
+            }
+    }
     characterSelections[0] = 'Rogue';
     characterSelections[8] = 'Dexterity';
     document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
     raceContinue.classList.add('continueButtonSelected');
-    fighterButton.classList.add('hoverEffect');
-    fighterButton.classList.add('characterChoices');
-    fighterButton.classList.remove('characterSelected');
-    wizardButton.classList.add('hoverEffect');
-    wizardButton.classList.add('characterChoices');
-    wizardButton.classList.remove('characterSelected');
 })
 
-fighterButton.addEventListener('click', () => {
+classButton[1].addEventListener('click', () => {
+    classButton[1].classList.remove('hoverEffect');
+    classButton[1].classList.remove('characterChoices');
+    classButton[1].classList.add('characterSelected');
+    for (let i = 0; i < 4; i++) {   
+            if( i != 1){
+                classButton[i].classList.add('hoverEffect');
+                classButton[i].classList.add('characterChoices');
+                classButton[i].classList.remove('characterSelected');
+            }
+    }
+    characterSelections[0] = 'Wizard';
+    characterSelections[8] = 'Dexterity';
+    document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
+    raceContinue.classList.add('continueButtonSelected');
+})
+
+classButton[2].addEventListener('click', () => {
+    classButton[2].classList.remove('hoverEffect');
+    classButton[2].classList.remove('characterChoices');
+    classButton[2].classList.add('characterSelected');
+    for (let i = 0; i < 4; i++) {   
+            if( i != 0){
+                classButton[i].classList.add('hoverEffect');
+                classButton[i].classList.add('characterChoices');
+                classButton[i].classList.remove('characterSelected');
+            }
+    }
+    characterSelections[0] = 'Fighter';
+    characterSelections[8] = 'Dexterity';
+    document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
+    raceContinue.classList.add('continueButtonSelected');
+})
+
+classButton[3].addEventListener('click', () => {
+    classButton[3].classList.remove('hoverEffect');
+    classButton[3].classList.remove('characterChoices');
+    classButton[3].classList.add('characterSelected');
+    for (let i = 0; i < 4; i++) {   
+            if( i != 0){
+                classButton[i].classList.add('hoverEffect');
+                classButton[i].classList.add('characterChoices');
+                classButton[i].classList.remove('characterSelected');
+            }
+    }
+    characterSelections[0] = 'Cleric';
+    characterSelections[8] = 'Dexterity';
+    document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
+    raceContinue.classList.add('continueButtonSelected');
+})
+
+/*fighterButton.addEventListener('click', () => {
     fighterButton.classList.remove('hoverEffect');
     fighterButton.classList.remove('characterChoices');
     fighterButton.classList.add('characterSelected');
@@ -104,7 +162,7 @@ clericButton.addEventListener('click', () => {
     fighterButton.classList.add('characterChoices');
     fighterButton.classList.remove('characterSelected');
 })
-
+*/
 // Race Selection Event Listeners
 
 elfButton.addEventListener('click', () => {
