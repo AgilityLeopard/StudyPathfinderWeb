@@ -1,6 +1,6 @@
 // Const NavBar Buttons
 const homeButton = document.getElementById("homeButton");
-//const classButton1 = document.getElementById("classButton");
+const classButton = document.getElementById("classButton");
 const raceButton = document.getElementById("raceButton");
 const abilitiesButton = document.getElementById("abilitiesButton");
 const charactersheetButton = document.getElementById("charactersheetButton");
@@ -34,11 +34,11 @@ const gnomeButton = document.getElementById("gnomeButton");
 
 // Class Selection Consts for user selection
 
-const classButton = [];
-classButton[0] = document.getElementById("rogueButton");
-classButton[1] = document.getElementById("wizardButton");
-classButton[2] = document.getElementById("fighterButton");
-classButton[3] = document.getElementById("clericButton");
+const classCh = [];
+classCh[0] = document.getElementById("rogueButton");
+classCh[1] = document.getElementById("wizardButton");
+classCh[2] = document.getElementById("fighterButton");
+classCh[3] = document.getElementById("clericButton");
 
 //const rogueButton = document.getElementById("rogueButton");
 //const fighterButton = document.getElementById("fighterButton");
@@ -47,15 +47,15 @@ classButton[3] = document.getElementById("clericButton");
 // Class Selection Event Listeners
 
 
-classButton[0].addEventListener('click', () => {
-    classButton[0].classList.remove('hoverEffect');
-    classButton[0].classList.remove('characterChoices');
-    classButton[0].classList.add('characterSelected');
+classCh[0].addEventListener('click', () => {
+    classCh[0].classList.remove('hoverEffect');
+    classCh[0].classList.remove('characterChoices');
+    classCh[0].classList.add('characterSelected');
     for (let i = 0; i < 4; i++) {   
             if( i != 0){
-                classButton[i].classList.add('hoverEffect');
-                classButton[i].classList.add('characterChoices');
-                classButton[i].classList.remove('characterSelected');
+                classCh[i].classList.add('hoverEffect');
+                classCh[i].classList.add('characterChoices');
+                classCh[i].classList.remove('characterSelected');
             }
     }
     characterSelections[0] = 'Rogue';
@@ -64,15 +64,15 @@ classButton[0].addEventListener('click', () => {
     raceContinue.classList.add('continueButtonSelected');
 })
 
-classButton[1].addEventListener('click', () => {
-    classButton[1].classList.remove('hoverEffect');
-    classButton[1].classList.remove('characterChoices');
-    classButton[1].classList.add('characterSelected');
+classCh[1].addEventListener('click', () => {
+    classCh[1].classList.remove('hoverEffect');
+    classCh[1].classList.remove('characterChoices');
+    classCh[1].classList.add('characterSelected');
     for (let i = 0; i < 4; i++) {   
             if( i != 1){
-                classButton[i].classList.add('hoverEffect');
-                classButton[i].classList.add('characterChoices');
-                classButton[i].classList.remove('characterSelected');
+                classCh[i].classList.add('hoverEffect');
+                classCh[i].classList.add('characterChoices');
+                classCh[i].classList.remove('characterSelected');
             }
     }
     characterSelections[0] = 'Wizard';
@@ -81,15 +81,15 @@ classButton[1].addEventListener('click', () => {
     raceContinue.classList.add('continueButtonSelected');
 })
 
-classButton[2].addEventListener('click', () => {
-    classButton[2].classList.remove('hoverEffect');
-    classButton[2].classList.remove('characterChoices');
-    classButton[2].classList.add('characterSelected');
+classCh[2].addEventListener('click', () => {
+    classCh[2].classList.remove('hoverEffect');
+    classCh[2].classList.remove('characterChoices');
+    classCh[2].classList.add('characterSelected');
     for (let i = 0; i < 4; i++) {   
             if( i != 0){
-                classButton[i].classList.add('hoverEffect');
-                classButton[i].classList.add('characterChoices');
-                classButton[i].classList.remove('characterSelected');
+                classCh[i].classList.add('hoverEffect');
+                classCh[i].classList.add('characterChoices');
+                classCh[i].classList.remove('characterSelected');
             }
     }
     characterSelections[0] = 'Fighter';
@@ -98,15 +98,15 @@ classButton[2].addEventListener('click', () => {
     raceContinue.classList.add('continueButtonSelected');
 })
 
-classButton[3].addEventListener('click', () => {
-    classButton[3].classList.remove('hoverEffect');
-    classButton[3].classList.remove('characterChoices');
-    classButton[3].classList.add('characterSelected');
+classCh[3].addEventListener('click', () => {
+    classCh[3].classList.remove('hoverEffect');
+    classCh[3].classList.remove('characterChoices');
+    classCh[3].classList.add('characterSelected');
     for (let i = 0; i < 4; i++) {   
             if( i != 0){
-                classButton[i].classList.add('hoverEffect');
-                classButton[i].classList.add('characterChoices');
-                classButton[i].classList.remove('characterSelected');
+                classCh[i].classList.add('hoverEffect');
+                classCh[i].classList.add('characterChoices');
+                classCh[i].classList.remove('characterSelected');
             }
     }
     characterSelections[0] = 'Cleric';
