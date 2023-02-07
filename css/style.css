@@ -610,3 +610,85 @@ sup{
     min-width: 100px;
   }
 }
+
+/*Подсказка всплывающая*/
+.tooltip {
+	background: rgba(0,0,0,.9);
+	color: #fff;
+	z-index: 999999;
+	position: absolute;
+	padding: 15px;
+	max-width: 250px;
+	border-radius: 2px;
+}
+.tooltip.animation-slide {
+	-webkit-animation-name: slideTooltip;
+	-webkit-animation-duration: .25s;
+	-webkit-animation-timing-function: ease;
+	animation-name: slideTooltip;
+	animation-duration: .25s;
+	animation-timing-function: ease;
+}
+.tooltip .tooltip-arrow {
+	position: absolute;
+	border: 8px solid rgba(0,0,0,.9);
+}
+.tooltip-arrow.bottomtotop {
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	top: -16px;
+}
+.tooltip-arrow.toptobottom {
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	bottom: -16px;
+}
+.tooltip-arrow.righttoleft {
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	left: -16px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.tooltip-arrow.lefttoright {
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	right: -16px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.tooltip-arrow.center {
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+@-webkit-keyframes slideTooltip {
+	from {
+		-webkit-transform: translateY(-20%);
+		transform: translateY(-20%);
+		opacity: 0;
+	}
+	to {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes slideTooltip {
+	from {
+		-webkit-transform: translateY(-20%);
+		transform: translateY(-20%);
+		opacity: 0;
+	}
+	to {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
