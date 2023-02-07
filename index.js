@@ -177,8 +177,10 @@ const dexLeft = document.getElementById("dexLeft");
 const dexRight = document.getElementById("dexRight");
 
 let dexValue = 10;
-if(characterSelections[8] == "Dexterity")    
+if(characterSelections[8] == "Dexterity") {
     dexValue = 12;
+}
+
 document.getElementById("dexResult").innerHTML = dexValue;
 
 dexLeft.addEventListener('click', () => {
