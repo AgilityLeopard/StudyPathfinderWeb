@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dungeons and Dragons Character Creator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <nav id="navbarSection" class="hidden navBarMenu">
+            <div class="flex">
+                <div class="flex logo">
+                    <img src="img/dicelogo.png" width="5%">
+                    <p class="fontheader">D&D Builder</p>
+                </div>
+                <div class="dropDown">
+                    <button class="navBarDropDown">Menu<i class="fa fa-caret-down"></i></button>
+                    <div class="dropDownOptions">
+                        <a id="homeButton">Home</a>
+                        <a id="classButton">Class</a>
+                        <a id="raceButton">Race</a>
+                        <a id="abilitiesButton">Abilities</a>
+                        <a id="charactersheetButton">Character Sheet</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="heroSection" class="hero">
+            <div class="flex logo">
+                <img src="img/dicelogo.png" width="5%">
+                <p class="fontheader">D&D Builder</p>
+            </div>
+            <div class="container paddingHero">
+                <h1 class="fontheader">DUNGEONS & DRAGONS <br> CHARACTER CREATOR</h1>
+                <p>The Dungeons & Dragons Character Creator will help you create a character whether you are new to the
+                    game or a veteran on the adventure lifestyle!</p>
+                <div class="flex">
+                    <button class="buttonStyling" id="heroButton">VENTURE<br>FORWARD</button>
+                </div>
+            </div>
+        </section> 
+
+        <section id="classSection" class="hidden sectionPadding">
+            <div class="flexvertical">
+                <h2 class="fontheader flex">CLASS <sup><img src="img/infoicon1.png"></sup></h2>
+            </div>
+            <div class="container flex">
+                <div id="rogue">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="rogueButton" type="button">
+                        <div>
+                            <h3>ROGUE <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Dexterity</p>
+                        </div>
+                        <img src="img/rogue.png" alt="rogue" class="roguePhoto">
+                    </button>
+                </div>
+                <div id="fighter">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="fighterButton" type="button">
+                        <div>
+                            <h3>FIGHTER <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Strength</p>
+                        </div>
+                        <img src="img/fighter.png" alt="fighter" class="fighterPhoto">
+                    </button>
+                </div>
+                <div id="wizard">
+                    <button id="wizardButton" class="flex optionBackground characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>WIZARD <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Intelligence</p>
+                        </div>
+                        <img src="img/wizard2.png" alt="wizard" class="wizardPhoto">
+                    </button>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="cleric">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="clericButton" type="button">
+                        <div>
+                            <h3>CLERIC <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Wisdom</p>
+                        </div>
+                        <img src="img/cleric.png" alt="cleric" class="clericPhoto">
+                    </button>
+                </div>
+                <div id="bard">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="bardButton" type="button">
+                        <div>
+                            <h3>BARD <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Charisma</p>
+                        </div>
+                        <img src="img/bard.png" alt="bard" class="bardPhoto">
+                    </button>
+                </div>
+                <div id="barbarian">
+                    <button id="barbarianButton" class="flex optionBackground characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>BARBARIAN <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Strength</p>
+                        </div>
+                        <img src="img/barbarian.png" alt="barbarian" class="barbarianPhoto">
+                    </button>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="druid">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="druidButton" type="button">
+                        <div>
+                            <h3>DRUID <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Wisdom</p>
+                        </div>
+                        <img src="img/druid.png" alt="druid" class="druidPhoto">
+                    </button>
+                </div>
+                <div id="ranger">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="rangerButton" type="button">
+                        <div>
+                            <h3>RANGER <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Dexterity and Wisdom</p>
+                        </div>
+                        <img src="img/ranger.png" alt="ranger" class="rangerPhoto">
+                    </button>
+                </div>
+                <div id="monk">
+                    <button id="monkButton" class="flex optionBackground characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>MONK <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Dexterity and Wisdom</p>
+                        </div>
+                        <img src="img/monk.png" alt="monk" class="monkPhoto">
+                    </button>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="paladin">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="paladinButton" type="button">
+                        <div>
+                            <h3>PALADIN <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Strength and Charisma</p>
+                        </div>
+                        <img src="img/paladin.png" alt="paladin" class="paladinPhoto">
+                    </button>
+                </div>
+                <div id="sorcerer">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="sorcererButton" type="button">
+                        <div>
+                            <h3>SORCERER <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Charisma</p>
+                        </div>
+                        <img src="img/sorcerer.png" alt="sorcerer" class="sorcererPhoto">
+                    </button>
+                </div>
+                <div id="warlock">
+                    <button id="warlockButton" class="flex optionBackground characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>WARLOCK <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">Charisma</p>
+                        </div>
+                        <img src="img/warlock.png" alt="warlock" class="warlockPhoto">
+                    </button>
+                </div>
+            </div>
+            <div class="flex">
+                <button class="buttonStyling" id="heroBack">BACK</button>
+                <button class="buttonStyling continueButton" id="raceContinue">CONTINUE</button>
+            </div>
+        </section>
+
+
+        <section id="raceSection" class="hidden sectionPadding">
+            <div class="flexvertical">
+                <h2 class="fontheader flex">RACE <sup><img src="img/infoicon1.png"></sup></h2>
+            </div>
+            <div class="container flex">
+                <div id="elf">
+                    <button id="elfButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>ELF <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Dexterity</p>
+                        </div>
+                        <img src="img/elff.png" id="elf">
+                    </button>
+                </div>
+                <div id="dwarf">
+                    <button id="dwarfButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>DWARF <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Constitution</p>
+                        </div>
+                        <img src="img/dwarf.png" id="dwarf">
+                    </button>
+                </div>
+                <div id="gnome">
+                    <button id="gnomeButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>GNOME <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Intelligence</p>
+                        </div>
+                        <img src="img/gnome.png" id="gnome">
+                    </a>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="tiefling">
+                    <button id="tieflingButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>TIEFLING <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Charisma</p>
+                        </div>
+                        <img src="img/tiefling.png" id="tiefling">
+                    </button>
+                </div>
+                <div id="firbolg">
+                    <button id="firbolgButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>FIRBOLG <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Wisdom</p>
+                        </div>
+                        <img src="img/firbolg.png" id="firbolg">
+                    </button>
+                </div>
+                <div id="dragonborn">
+                    <button id="dragonbornButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>DRAGONBORN <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Strength</p>
+                        </div>
+                        <img src="img/dragonborn.png" id="dragonborn">
+                    </a>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="kenku">
+                    <button id="kenkuButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>KENKU <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Dexterity</p>
+                        </div>
+                        <img src="img/kenku.png" id="kenku">
+                    </button>
+                </div>
+                <div id="golbin">
+                    <button id="golbinButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>GOBLIN <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Dexterity</p>
+                        </div>
+                        <img src="img/goblin.png" id="golbin">
+                    </button>
+                </div>
+                <div id="tabaxi">
+                    <button id="tabaxiButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
+                        <div>
+                            <h3>TABAXI <sup><img src="img/infoicon1.png"></sup></h3>
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
+                            <p class="classinfo">+2 Dexterity</p>
+                        </div>
+                        <img src="img/tabaxi.png" alt="tabaxi" id="tabaxi">
+                    </a>
+                </div>
+            </div>
+            <div class="flex">
+                <button class="buttonStyling" id="classBack">BACK</button>
+                <button class="buttonStyling continueButton" id="abilitiesContinue">CONTINUE</button>
+            </div>
+        </section>
+
+        <section id="abilitiesSection" class="hidden sectionPadding">
+            <div class="flexvertical">
+                    <h2 class="fontheader flex">ABILITIES <sup><img src="img/infoicon1.png"></sup></h2>
+            </div>
+            <div class="container flexvertical">
+                    <p>POINTS REMAINING <sup><img src="img/infoicon1.png"></sup></p>
+                <img src="img/banner.png" width="200px" class="abilityBanner">
+                <div class="flex">
+                    <p id="pointsCounter">27</p>
+                    <p>/27</p>
+                </div>
+                <div class="flex flex4">
+                    <div class="flexvertical abilitypadding">
+                        <div class="flexbetween">
+                            <div class="alignabilitysheet">
+                                <h4>Strength <sup><img src="img/infoicon1.png"></sup></h4>
+                            </div>
+                            <div class="flex">
+                                <button id="strLeft" class="abilitiesLeft"></button>                            
+                                <p id="strResult" class="abilitystat">8</p>
+                                <button id="strRight" class="abilitiesRight"></button>
+                            </div>
+                        </div>
+                        <div class="flexbetween">
+                            <div class="alignabilitysheet">
+                                <h4>Dexterity <sup><img src="img/infoicon1.png"></sup></h4>
+                            </div>
+                            <div class="flex">
+                                <button id="dexLeft" class="abilitiesLeft"></button>  
+                                <p id="dexResult" class="abilitystat">8</p>
+                                <button id="dexRight" class="abilitiesRight"></button>  
+                            </div>
+                        </div>
+                        <div class="flexbetween">
+                            <div class="alignabilitysheet">
+                                <h4>Constitution <sup><img src="img/infoicon1.png"></sup></h4>
+                            </div>
+                            <div class="flex">
+                                <button id="conLeft" class="abilitiesLeft"></button>
+                                <p id="conResult" class="abilitystat">8</p>
+                                <button id="conRight" class="abilitiesRight"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexvertical abilitypadding">
+                        <div class="flexbetween">
+                            <div class="alignabilitysheet">
+                                <h4>Intelligence <sup><img src="img/infoicon1.png"></sup></h4>
+                            </div>
+                            <div class="flex">
+                                <button id="intLeft" class="abilitiesLeft"></button>
+                                <p id="intResult" class="abilitystat">8</p>
+                                <button id="intRight" class="abilitiesRight"></button>
+                            </div>
+                        </div>
+                        <div class="flexbetween">
+                            <div class="alignabilitysheet">
+                                <h4>Wisdom <sup><img src="img/infoicon1.png"></sup></h4>
+                            </div>
+                            <div class="flex">
+                                <button id="wisLeft" class="abilitiesLeft"></button>
+                                <p id="wisResult" class="abilitystat">8</p>
+                                <button id="wisRight" class="abilitiesRight"></button>
+                            </div>
+                        </div>
+                        <div class="flexbetween">
+                            <div class="alignabilitysheet">
+                                <h4>Charisma <sup><img src="img/infoicon1.png"></sup></h4>
+                            </div>
+                            <div class="flex">
+                                <button id="chaLeft" class="abilitiesLeft"></button>
+                                <p id="chaResult" class="abilitystat">8</p>
+                                <button id="chaRight" class="abilitiesRight"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <button class="buttonStyling" id="raceBack">BACK</button>
+                    <button class="buttonStyling continueButton" id="charactersheetContinue">CONTINUE</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="charactersheetSection" class="hidden">
+            <div class="container charactersheetborder">
+                <img class="lefttopcorner" src="img/charactersheetborder.png">
+                <img class="righttopcorner" src="img/charactersheetborder.png">
+                <img class="leftbottomcorner" src="img/charactersheetborder.png">
+                <img class="rightbottomcorner" src="img/charactersheetborder.png">
+                <div class="flex sectionPadding">
+                    <input value="Name Here" type="text" class="characterName">
+                </div>
+                <div class="flex2">
+                    <div class="flexbetween1">
+                        <div class="flex">
+                            <p>Race:</p><p id="RaceCS" class="csStyling"></p>
+                        </div>
+                        <div class="flex">
+                            <p>Class:</p><p id="classCS" class="csStyling"></p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex">
+                            <p>Primary Ability:</p><p id="primaryAbilityCS" class="csStyling"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="abilityFinal">
+                        <p>STR</p>
+                        <div class="charactersheet flex">
+                            <p id="strAbilityCS">8</p>
+                        </div>
+                    </div>
+                    <div class="abilityFinal">
+                        <p>DEX</p>
+                        <div class="charactersheet flex">
+                            <p id="dexAbilityCS">8</p>
+                        </div>
+                    </div>
+                    <div class="abilityFinal">
+                        <p>CON</p>
+                        <div class="charactersheet flex">
+                            <p id="conAbilityCS">8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="abilityFinal">
+                        <p>INT</p>
+                        <div class="charactersheet flex">
+                            <p id="intAbilityCS">8</p>
+                        </div>
+                    </div>
+                    <div class="abilityFinal">
+                        <p>WIS</p>
+                        <div class="charactersheet flex">
+                            <p id="wisAbilityCS">8</p>
+                        </div>
+                    </div>
+                    <div class="abilityFinal">
+                        <p>CHA</p>
+                        <div class="charactersheet flex">
+                            <p id="chaAbilityCS">8</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="buttonStyling" id="abilitiesBack">BACK</button>
+            </div>
+        </section>
+
+    <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
