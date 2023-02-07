@@ -15,6 +15,8 @@ const raceBack = document.getElementById("raceBack");
 const charactersheetContinue = document.getElementById("charactersheetContinue");
 const abilitiesBack = document.getElementById("abilitiesBack")
 
+
+
 // Const Sections
 const navbarSection = document.getElementById("navbarSection");
 const heroSection = document.getElementById("heroSection");
@@ -207,7 +209,21 @@ dexLeft.addEventListener('click', () => {
             dexRaceCap -= 1;
         }
     }
+    if(dexRaceCap == -1)
+    {
+        dexLeft.classList.add('characterChoices');
+        dexLeft.classList.remove('characterSelected');
+    }
+        
+    else
+    {
+        dexLeft.classList.remove('characterChoices');
+        dexLeft.classList.add('characterSelected');
+        dexRight.classList.remove('characterChoices');
+        dexRight.classList.add('characterSelected');
+    }
 })
+
 
 dexRight.addEventListener('click', () => {
     if(dexRaceCap != 1)
@@ -222,6 +238,20 @@ dexRight.addEventListener('click', () => {
             document.getElementById("dexResult").innerHTML = dexValue;
             dexRaceCap += 1;
         }
+    }
+    if(dexRaceCap == 1)
+    {
+        dexRight.classList.add('characterChoices');
+        dexRight.classList.remove('characterSelected');
+
+    }
+    else
+    {
+        dexRight.classList.remove('characterChoices');
+        dexRight.classList.add('characterSelected');
+        dexLeft.classList.remove('characterChoices');
+        dexLeft.classList.add('characterSelected');
+        
     }
 })
 
