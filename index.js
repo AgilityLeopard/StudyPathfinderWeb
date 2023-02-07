@@ -109,7 +109,7 @@ elfButton.addEventListener('click', () => {
     gnomeButton.classList.add('hoverEffect');
     gnomeButton.classList.add('characterChoices');
     gnomeButton.classList.remove('characterSelected');
-    dexValue = 12;
+    dexValue = 14;
     document.getElementById("dexResult").innerHTML = dexValue;
 })
 
