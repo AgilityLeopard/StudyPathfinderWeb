@@ -39,7 +39,7 @@ const fighterButton = document.getElementById("fighterButton");
 const wizardButton = document.getElementById("wizardButton");
 
 // Class Selection Event Listeners
-
+let dexValue = 10;
 
 rogueButton.addEventListener('click', () => {
     rogueButton.classList.remove('hoverEffect');
@@ -55,6 +55,7 @@ rogueButton.addEventListener('click', () => {
     wizardButton.classList.add('hoverEffect');
     wizardButton.classList.add('characterChoices');
     wizardButton.classList.remove('characterSelected');
+    dexValue++;
 })
 
 fighterButton.addEventListener('click', () => {
@@ -71,6 +72,7 @@ fighterButton.addEventListener('click', () => {
     rogueButton.classList.add('hoverEffect');
     rogueButton.classList.add('characterChoices');
     rogueButton.classList.remove('characterSelected');
+    dexValue--;
 })
 
 wizardButton.addEventListener('click', () => {
@@ -87,6 +89,7 @@ wizardButton.addEventListener('click', () => {
     fighterButton.classList.add('hoverEffect');
     fighterButton.classList.add('characterChoices');
     fighterButton.classList.remove('characterSelected');
+    dexValue--;
 })
 
 // Race Selection Event Listeners
@@ -103,6 +106,7 @@ elfButton.addEventListener('click', () => {
     gnomeButton.classList.add('hoverEffect');
     gnomeButton.classList.add('characterChoices');
     gnomeButton.classList.remove('characterSelected');
+    dexValue++;
 })
 
 dwarfButton.addEventListener('click', () => {
@@ -117,6 +121,7 @@ dwarfButton.addEventListener('click', () => {
     gnomeButton.classList.add('hoverEffect');
     gnomeButton.classList.add('characterChoices');
     gnomeButton.classList.remove('characterSelected');
+    dexValue--;
 })
 
 gnomeButton.addEventListener('click', () => {
@@ -131,6 +136,7 @@ gnomeButton.addEventListener('click', () => {
     dwarfButton.classList.add('hoverEffect');
     dwarfButton.classList.add('characterChoices');
     dwarfButton.classList.remove('characterSelected');
+    dexValue--;
 })
 
 
@@ -176,11 +182,7 @@ strRight.addEventListener('click', () => {
 const dexLeft = document.getElementById("dexLeft");
 const dexRight = document.getElementById("dexRight");
 
-let dexValue = 10;
-if(characterSelections[8] == "Dexterity") {
-    dexValue ++;
-    dexValue ++;
-}
+
 
 document.getElementById("dexResult").innerHTML = dexValue;
 
@@ -401,7 +403,7 @@ charactersheetButton.addEventListener('click', () => {
     document.getElementById("classCS").innerHTML = characterSelections[0];
     document.getElementById("raceCS").innerHTML = characterSelections[1];
 
-    if (dwarfButton.classList.contains('characterSelected')){
+    /*if (dwarfButton.classList.contains('characterSelected')){
         document.getElementById("conAbilityCS").innerHTML = characterSelections[4] + 2;
         document.getElementById("dexAbilityCS").innerHTML = characterSelections[3];
         document.getElementById("intAbilityCS").innerHTML = characterSelections[5];
@@ -415,7 +417,7 @@ charactersheetButton.addEventListener('click', () => {
         document.getElementById("intAbilityCS").innerHTML = characterSelections[5] + 2;
         document.getElementById("conAbilityCS").innerHTML = characterSelections[4];
         document.getElementById("dexAbilityCS").innerHTML = characterSelections[3];
-    }
+    }*/
 })
 
 /* Navigation Buttons */
