@@ -1,2 +1,2 @@
-# StudyDnDWeb
+# StudyPathWeb
 Study for JS Repository
