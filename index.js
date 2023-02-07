@@ -176,7 +176,9 @@ strRight.addEventListener('click', () => {
 const dexLeft = document.getElementById("dexLeft");
 const dexRight = document.getElementById("dexRight");
 
-let dexValue = 8;
+let dexValue = 10;
+if(characterSelections[8] == "Dexterity")    
+    let dexValue = 12;
 
 dexLeft.addEventListener('click', () => {
     if((dexValue > 8) && (dexValue <= 13)){
