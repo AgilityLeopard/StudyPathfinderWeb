@@ -178,7 +178,8 @@ const dexRight = document.getElementById("dexRight");
 
 let dexValue = 10;
 if(characterSelections[8] == "Dexterity") {
-    dexValue = 12;
+    dexValue ++;
+    dexValue ++;
 }
 
 document.getElementById("dexResult").innerHTML = dexValue;
