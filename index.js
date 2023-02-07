@@ -13,6 +13,7 @@ const classBack = document.getElementById("classBack")
 const abilitiesContinue = document.getElementById("abilitiesContinue")
 const raceBack = document.getElementById("raceBack");
 const charactersheetContinue = document.getElementById("charactersheetContinue");
+const abilitiesBack = document.getElementById("abilitiesBack")
 
 // Const Sections
 const navbarSection = document.getElementById("navbarSection");
@@ -461,6 +462,12 @@ raceBack.addEventListener('click', () => {
     raceSection.classList.remove('hidden');
     abilitiesSection.classList.add('hidden');
 })
+
+abilitiesBack.addEventListener('click', () => {
+    charactersheetSection.classList.remove('hidden');
+    abilitiesSection.classList.add('hidden');
+})
+
 
 let RaceCS = document.getElementById("RaceCS");
 let classCS = document.getElementById("classCS");
