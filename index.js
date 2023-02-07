@@ -179,6 +179,7 @@ const dexRight = document.getElementById("dexRight");
 let dexValue = 10;
 if(characterSelections[8] == "Dexterity")    
     let dexValue = 12;
+document.getElementById("dexResult").innerHTML = dexValue;
 
 dexLeft.addEventListener('click', () => {
     if((dexValue > 8) && (dexValue <= 13)){
@@ -474,7 +475,7 @@ charactersheetContinue.addEventListener('click', () => {
     document.getElementById("strAbilityCS").innerHTML = characterSelections[2];
     document.getElementById("wisAbilityCS").innerHTML = characterSelections[6];
     document.getElementById("chaAbilityCS").innerHTML = characterSelections[7];
-
+    
     if (dwarfButton.classList.contains('characterSelected')){
         document.getElementById("conAbilityCS").innerHTML = characterSelections[4] + 2;
         document.getElementById("dexAbilityCS").innerHTML = characterSelections[3];
