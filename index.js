@@ -89,6 +89,22 @@ wizardButton.addEventListener('click', () => {
     fighterButton.classList.remove('characterSelected');
 })
 
+clericButton.addEventListener('click', () => {
+    clericButton.classList.remove('hoverEffect');
+    clericButton.classList.remove('characterChoices');
+    clericButton.classList.add('characterSelected');
+    characterSelections[0] = 'Cleric';
+    characterSelections[8] = 'Wisdom';
+    document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
+    raceContinue.classList.add('continueButtonSelected');
+    rogueButton.classList.add('hoverEffect');
+    rogueButton.classList.add('characterChoices');
+    rogueButton.classList.remove('characterSelected');
+    fighterButton.classList.add('hoverEffect');
+    fighterButton.classList.add('characterChoices');
+    fighterButton.classList.remove('characterSelected');
+})
+
 // Race Selection Event Listeners
 
 elfButton.addEventListener('click', () => {
@@ -132,6 +148,7 @@ gnomeButton.addEventListener('click', () => {
     dwarfButton.classList.add('characterChoices');
     dwarfButton.classList.remove('characterSelected');
 })
+
 
 
 // Abilities Selection Consts 
