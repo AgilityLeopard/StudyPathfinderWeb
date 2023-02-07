@@ -189,37 +189,39 @@ strRight.addEventListener('click', () => {
 const dexLeft = document.getElementById("dexLeft");
 const dexRight = document.getElementById("dexRight");
 
-
+let dexRaceCap = 0;
 
 document.getElementById("dexResult").innerHTML = dexValue;
 
 dexLeft.addEventListener('click', () => {
-    if((dexValue > 8) && (dexValue <= 13)){
-        dexValue --;
-        document.getElementById("dexResult").innerHTML = dexValue;
-        pointTotal ++;
-        document.getElementById("pointsCounter").innerHTML = pointTotal;
-      }
-      else if((dexValue >= 13) && (dexValue <= 15)){
-        dexValue --;
-        document.getElementById("dexResult").innerHTML = dexValue;
-        pointTotal += 2;
-        document.getElementById("pointsCounter").innerHTML = pointTotal;
+    if(dexRaceCap != -1)
+    {
+        if(dexValue < 18){
+            dexValue -= 2; 
+            document.getElementById("dexResult").innerHTML = dexValue;
+            dexRaceCap -= 1;
+          }
+          else if (dexValue >= 18){
+            dexValue --;
+            document.getElementById("dexResult").innerHTML = dexValue;
+            dexRaceCap -= 1;
+        }
     }
 })
 
 dexRight.addEventListener('click', () => {
-    if((dexValue < 13 ) && (pointTotal > 0)){
-        dexValue ++; 
-        document.getElementById("dexResult").innerHTML = dexValue;
-        pointTotal --;
-        document.getElementById("pointsCounter").innerHTML = pointTotal;
-      }
-      else if ((dexValue >= 13) && (dexValue < 15) && (pointTotal >= 2)){
-        dexValue ++;
-        document.getElementById("dexResult").innerHTML = dexValue;
-        pointTotal -= 2;
-        document.getElementById("pointsCounter").innerHTML = pointTotal;
+    if(dexRaceCap != 1)
+    {
+        if(dexValue < 18){
+            dexValue += 2; 
+            document.getElementById("dexResult").innerHTML = dexValue;
+            dexRaceCap += 1;
+          }
+          else if (dexValue >= 18){
+            dexValue ++;
+            document.getElementById("dexResult").innerHTML = dexValue;
+            dexRaceCap += 1;
+        }
     }
 })
 
