@@ -1,6 +1,6 @@
 // Const NavBar Buttons
 const homeButton = document.getElementById("homeButton");
-const classButton1 = document.getElementById("classButton");
+//const classButton1 = document.getElementById("classButton");
 const raceButton = document.getElementById("raceButton");
 const abilitiesButton = document.getElementById("abilitiesButton");
 const charactersheetButton = document.getElementById("charactersheetButton");
